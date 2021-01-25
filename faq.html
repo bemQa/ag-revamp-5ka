@@ -448,7 +448,14 @@
                     		<input type="text" name="email" placeholder="E-mail" required>                    		
                     	</div>
                     	<div class="input-field">
-                    		<input type="text" name="city" placeholder="Город">                    		
+                    		<div class="select">
+								<select name="city" class="select-search" data-placeholder="Город" required>
+									<option value=""></option>
+									<option value="1">Город</option>
+									<option value="2">Город</option>
+									<option value="3">Город</option>
+								</select>
+							</div>
                     	</div>
                     	<div class="popup__desc">Введите символы с картинки</div>
                     	<div class="captcha-wrap mb20">
@@ -600,6 +607,7 @@
 	<script src="libs/scrollbar/jquery.scrollbar.min.js"></script>
 	<script src="libs/jquery.inputmask.min.js"></script>
 	<script src="libs/jquery.countdown.min.js"></script>
+	<script src="libs/slick.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
