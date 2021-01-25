@@ -2122,6 +2122,7 @@ table td:nth-child(3) {
 .lk-prizes-slider {
     max-width: 570px;
     width: 100%;
+    user-select: auto;
 }
 
 .lk-prizes-slide-title {
