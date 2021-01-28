@@ -2382,12 +2382,6 @@ table td:nth-child(3) {
         padding: 0 8px;
     }
 
-    .winner-monthly-wrapper {
-        flex-wrap: wrap;
-        max-width: 600px;
-        width: 100%;
-    }
-
     .profile-contact-wrapper {
         flex-direction: column;
         margin-bottom: 0;
