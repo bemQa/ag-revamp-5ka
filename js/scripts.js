@@ -198,4 +198,40 @@ $(document).ready(function () {
         slidesToScroll: 1,
         swipe: false
     });
+
+    $('.superwinner-slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1281,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    if($(window).innerWidth() < 1000) {
+        $('.products-title').one('click', function() {
+            $(this).parent().find('.products-list').slick({
+                dots: false,
+                arrows: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    }
 });
