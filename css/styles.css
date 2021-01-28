@@ -2102,6 +2102,7 @@ table td:nth-child(3) {
 .lk-table {
     max-width: 420px;
     width: 100%;
+    min-height: 420px;
     margin: auto;
 }
 
@@ -2903,6 +2904,7 @@ table td:nth-child(3) {
 
     .lk-table {
         max-height: 300px;
+        min-height: 300px;
     }
 
     .lk-table table th, 
