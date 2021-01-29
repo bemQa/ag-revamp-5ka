@@ -2728,24 +2728,9 @@ table td:nth-child(3) {
 }
 
 @media (max-width: 1366px) {
-	.steps-block::before,
-    .pka-wrapper .steps-block::before,
-    .pka-wrapper .bg2-top {
+	.steps-block::before {
 		background-size: cover;
 	}
-
-    .main-wishes-info {
-        max-width: 450px;
-    }
-
-    .perekrestok-wrapper .steps-block::after {
-        left: 0;
-        right: -800px;
-    }
-
-    .pka-wrapper .steps-block::after {
-        right: -920px;
-    }
 }
 
 @media (max-width: 1280px) {
@@ -2806,7 +2791,7 @@ table td:nth-child(3) {
         top: 10px;
         left: 0;
         right: 0;
-        max-width: 143px;
+        max-width: 120px;
         margin: auto;
         z-index: 11;
     }
