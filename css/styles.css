@@ -2749,6 +2749,56 @@ table td:nth-child(3) {
     background-size: 1066px;
 }
 
+.tooltip {
+    position: fixed;
+    top: 150px;
+    right: 0;
+    width: 320px;
+    height: 150px;
+    padding: 15px 0 20px;
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    background: #FCAE18;
+    border-radius: 22px;
+    box-shadow: -1px 1px 2px rgba(104, 39, 0, 0.75);
+    z-index: 15;
+}
+
+.close-tooltip {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+
+.tooltip-title {
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -1px 1px 2px rgba(104, 39, 0, 0.75);
+    margin-bottom: 5px;
+}
+
+.tooltip-text {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tooltip-btn {
+    max-width: 140px;
+    height: 34px;
+    padding: 8px 0;
+    font-size: 16px;
+}
+
 @media (max-width: 1366px) {
 	.steps-block::before {
 		background-size: cover;
