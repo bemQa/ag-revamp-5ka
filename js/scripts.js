@@ -52,6 +52,7 @@ $(document).ready(function () {
 
     $('.table-wrapper').scrollbar();
     $('.faq-wrap').scrollbar();
+    $('.place-scroll').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({
@@ -238,5 +239,24 @@ $(document).ready(function () {
     $('.close-tooltip').on('click', function (e) {
         e.preventDefault();
         $(this).parent().fadeOut();
+    });
+
+    $('.places-link').one('click', function (e) {
+        $('.places-slider').slick({
+            dots: false,
+            arrows: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
     });
 });
