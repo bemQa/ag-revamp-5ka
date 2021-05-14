@@ -259,4 +259,24 @@ $(document).ready(function () {
             ]
         });
     });
+
+    $('.tooltip-btn[data-popup="more-cacao"]').one('click', function (e) {
+        $('.more-cacao-slider').slick({
+            dots: false,
+            arrows: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        arrows: true,
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
 });
